@@ -16,15 +16,13 @@ body {
   background-color: hsl(204, 43%, 93%);
 }
 
-main {
+article {
   max-width: 350px;
   margin-inline: 1rem;
   border-radius: .5rem .5rem .5rem .5rem;
   box-shadow: 0 .75rem 2rem rgba(0,0,0, .3);
-  article {
+  .community {
     padding: 1.5rem;
-  }
-  article:nth-of-type(1) {
     background-color: #fff;
     border-radius: .5rem .5rem 0 0;
     h1 {
@@ -42,7 +40,8 @@ main {
       margin: 1.1rem 0 .5rem 0;
     }
   }
-  article:nth-of-type(2) {
+  .subscription {
+    padding: 1.5rem;
     background-color: hsl(179, 62%, 43%);
     h1 {
       color: #fff;
@@ -84,7 +83,8 @@ main {
       }
     }
   }
-  article:nth-of-type(3) {
+  .benefits {
+    padding: 1.5rem;
     background-color: #4abebd;
     border-radius: 0 0 .5rem .5rem;
     h1 {
@@ -105,17 +105,17 @@ main {
 }
 
 @media(min-width: 768px) {
-  main {
+  article {
     max-width: 600px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    article:nth-of-type(1) {
+    .community {
       grid-column: 1 / 3;
     }
-    article:nth-of-type(2) {
+    .subscription {
       border-radius: 0 0 0 .5rem;
     }
-    article:nth-of-type(3) {
+    .benefits {
       border-radius: 0 0 .5rem 0;
     }
   }
